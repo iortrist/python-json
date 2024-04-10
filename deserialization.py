@@ -1,25 +1,45 @@
 import json
 
-# json.load()
+## json.load() - Reads file object containing JSON data
 
-def read_from_json_file():
+## Reading from a json file
+def read_from_json_file(): 
     with open("JSON_DATA.json", "r") as fp:
         JSON_DATA = json.load(fp)
 
     print(f'Type: {type(JSON_DATA)}')
     print(JSON_DATA)
 
+## Reading from a txt file
+def read_from_txt_file():
+    with open("JSON_DATA.txt", "r") as fp:
+        JSON_DATA = json.load(fp)
 
-# with open("jsonString.txt", "rb") as fp:
-#     json_loads = json.loads(fp.read())
+    print(f'Type: {type(JSON_DATA)}')
+    print(JSON_DATA)
 
-# with open("json.doc", "rb") as fp:
-#     json_doc = json.loads(fp.read())
+## Reading from a doc file
+def read_from_doc_file():
+    with open("JSON_DATA.doc", "r") as fp:
+        JSON_DATA = json.load(fp)
+
+    print(f'Type: {type(JSON_DATA)}')
+    print(JSON_DATA)
 
 
-# print("json.loads(): ", type(json_loads))
-# print("json.load(): ", type(json_load))
 
-# print(json_doc)
+## json.loads() - Reads string containing valid JSON data
 
-read_from_json_file()
+JSON_STRING = '{"name": "Alice", "age": 30, "city": "New York"}'
+
+def json_loads(json_string):
+    JSON_DATA = json.loads(json_string)
+
+    print(f'Type: {type(JSON_DATA)}')
+    print(JSON_DATA)
+
+
+# read_from_json_file()
+# read_from_txt_file()
+# read_from_doc_file()
+json_loads(JSON_STRING)
