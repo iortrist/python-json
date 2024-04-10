@@ -4,7 +4,7 @@ import json
 
 ## Reading from a json file
 def read_from_json_file(): 
-    with open("JSON_DATA.json", "r") as fp:
+    with open("json/JSON_DATA.json", "r") as fp:
         JSON_DATA = json.load(fp)
 
     print(f'Type: {type(JSON_DATA)}')
@@ -12,7 +12,7 @@ def read_from_json_file():
 
 ## Reading from a txt file
 def read_from_txt_file():
-    with open("JSON_DATA.txt", "r") as fp:
+    with open("json/JSON_DATA.txt", "r") as fp:
         JSON_DATA = json.load(fp)
 
     print(f'Type: {type(JSON_DATA)}')
@@ -20,7 +20,7 @@ def read_from_txt_file():
 
 ## Reading from a doc file
 def read_from_doc_file():
-    with open("JSON_DATA.doc", "r") as fp:
+    with open("json/JSON_DATA.doc", "r") as fp:
         JSON_DATA = json.load(fp)
 
     print(f'Type: {type(JSON_DATA)}')
@@ -41,5 +41,5 @@ def json_loads(json_string):
 
 # read_from_json_file()
 # read_from_txt_file()
-# read_from_doc_file()
-json_loads(JSON_STRING)
+read_from_doc_file()
+# json_loads(JSON_STRING)
