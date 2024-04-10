@@ -10,14 +10,6 @@
 3. Process the data
 4. Write the altered data with dump() or dumps().
 
-## Basic Workflow
-
-Import the json package.
-Read the data with load() or loads().
-Process the data.
-Write the altered data with dump() or dumps().
-
-
 ## Import module
 
 ```sh
